@@ -1,8 +1,8 @@
 :root {
-    --main-white: #f0f0f0;
-    --main-red: #be3144;
-    --main-blue: #45567d;
-    --main-gray: #303841;
+    --cor1: #53B1E0;
+    --cor2: #28556B;
+    --cor3: #176B94;
+    --cor4: #193442;
   }
   
   * {
@@ -17,32 +17,12 @@
     scroll-behavior: smooth;
   }
   
-  
-  @media (max-width: 75em) {
-    html {
-      font-size: 60%;
-    }
-  }
-  
-  
-  @media (max-width: 61.25em) {
-    html {
-      font-size: 58%;
-    }
-  }
-  
-  @media (max-width: 28.75em) {
-    html {
-      font-size: 55%;
-    }
-  }
-   
   body {
     font-family: Georgia;
     font-size: 1.8rem; 
     font-weight: 400;
     line-height: 1.4;
-    color: var(--main-white);
+    color: var(--cor1);
   }
   
   h1,
@@ -66,7 +46,7 @@
   
   a {
     text-decoration: none;
-    color: var(--main-white);
+    color: var(--cor1);
   }
   
   img {
@@ -77,31 +57,25 @@
     
   .nav {
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    background: var(--main-red);
+    background: var(--cor2);
     box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
     z-index: 10;
-  }
+    }
   
   .navlist {
     display: flex;
     margin-right: 2rem;
   }
-  
-  @media (max-width: 28.75em) {
-    .nav {
-      justify-content: center;
-    }
-  
+     
     .navlist {
       margin: 0 1rem;
     }
-  }
-  
+    
   .navlist a {
     display: block;
     font-size: 2.2rem;
@@ -109,7 +83,7 @@
   }
   
   .navlist a:hover {
-    background: var(--main-blue);
+    background: var(--cor3);
   }
   
  
@@ -120,8 +94,8 @@
     align-items: center;
     width: 100%;
     height: 100vh;
-    background-color: #000;
-    background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
+    background-color: var(--cor4);
+    background-image: linear-gradient(50deg, #3a3d40 20%, #181719 80%);
   }
 
   .section-formacao {
@@ -131,36 +105,31 @@
     align-items: center;
     width: 100%;
     height: 40vh;
-    background-color: #000;
+    background-color: var(--cor4);
+    font-size: 2.2rem;
  }
   
   .section-about > p {
     font-size: 3rem;
     font-weight: 200;
     font-style: italic;
-    color: var(--main-red);
+    color: var(--cor3);
   }
   
    
   .section-projetos {
     text-align: center;
     padding: 10rem 2rem;
-    background: var(--main-blue);
+    background: var(--cor2);
+    padding: 6rem 1rem;
   }
   
   .header-projeto {
     max-width: 640px;
     margin: 0 auto 6rem auto;
-    border-bottom: 0.2rem solid var(--main-white);
+    border-bottom: 0.2rem solid var(--cor1);
   }
   
-  @media (max-width: 28.75em) {
-    .header-projeto {
-      font-size: 4rem;
-    }
-  }
-  
- 
   .grid-projetos {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
@@ -171,25 +140,14 @@
     margin-bottom: 6rem;
   }
   
-  @media (max-width: 30.625em) {
-    .section-projetos {
-      padding: 6rem 1rem;
-    }
-  
-  .grid-projetos {
-      grid-template-columns: 1fr;
-    }
-  }
-  
   .projeto {
-    background: var(--main-gray);
-    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    background: var(--cor4);
     border-radius: 2px;
   }
   
    
   .projeto-img {
-    height: calc(100% - 6.8rem);
+    height: 100%;
     width: 100%;
     object-fit: cover;
   }
@@ -209,32 +167,26 @@
   
   .link-perfil {
     font-size: 2rem;
-    background: var(--main-gray);
+    background: var(--cor4);
     transition: background 0.3s ease-out;
   }
   
   .link-perfil:hover {
-    background: var(--main-red);
+    background: var(--cor2);
   }
          
   .section-contato {
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 50vh;
+    height: 35vh;
     padding: 0 2rem;
-    background: var(--main-gray);
+    background: var(--cor4);
   }
   
   .header-contato > h2 {
     font-size: 4rem;
 
-  }
-  
-  @media (max-width: 28.75em) {
-    .header-contato > h2 {
-      font-size: 4rem;
-    }
   }
    
   footer {
@@ -242,14 +194,9 @@
     display: flex;
     justify-content: space-evenly;
     padding: 2rem;
-    background: var(--main-gray);
-    border-top: 4px solid var(--main-red);
+    background: var(--cor4);
+    border-top: 4px solid var(--cor2);
   }
    
-  @media (max-width: 28.75em) {
-    footer {
-      flex-direction: column;
-      text-align: center;
-    }
-  }
+  
   
