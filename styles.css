@@ -126,8 +126,7 @@
   
   .header-projeto {
     max-width: 640px;
-    margin: 0 auto 6rem auto;
-    border-bottom: 0.2rem solid var(--cor1);
+    margin: 0 auto 6rem auto;   
   }
   
   .grid-projetos {
@@ -154,15 +153,14 @@
   
   .projeto-titulo {
     font-size: 2rem;
-    padding: 2rem 0.5rem;
+    padding: 2rem 0.5rem;    
   }
   
   .links-contato {
     display: inline-flex;
     justify-content: space-around;
     padding: 5rem 30rem;
-    border-radius: 2px;
-            
+    border-radius: 2px;            
   }
   
   .link-perfil {
@@ -179,14 +177,30 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 35vh;
+    height: 85vh;
     padding: 0 2rem;
     background: var(--cor4);
   }
   
   .header-contato > h2 {
     font-size: 4rem;
+  }
 
+  .formulario{
+    width: 80%;
+    text-decoration: none;
+    padding-left: 60rem;
+  }
+
+  input[type="submit"] {
+    width: 150px;
+    margin: 1em auto;
+    height: 2em;
+    font-size: 1.3rem;
+    background-color: var(--cor1);
+    color: var(--cor4);
+    border-color: white;
+    font-weight: 700;       
   }
    
   footer {
